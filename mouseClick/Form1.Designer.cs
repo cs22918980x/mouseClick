@@ -62,7 +62,7 @@
             this.button2.Size = new System.Drawing.Size(149, 106);
             this.button2.TabIndex = 2;
             this.button2.TabStop = false;
-            this.button2.Text = "re";
+            this.button2.Text = "reset";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -74,8 +74,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.timeLabel);
+            this.Font = new System.Drawing.Font("新細明體", 9F);
             this.Name = "mouseClick";
-            this.Text = "Form1";
+            this.Text = "mouseClick";
             this.ResumeLayout(false);
             this.PerformLayout();
 
