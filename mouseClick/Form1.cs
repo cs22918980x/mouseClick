@@ -30,5 +30,16 @@ namespace mouseClick
             timeLabel.Text = "You have clicked " + time + " time";
             
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (time > 10) 
+                MessageBox.Show("Yor are Master so good");
+            else if (time == 10)
+                MessageBox.Show("click again");
+            else 
+                MessageBox.Show("too slow");
+
+        }
     }
 }
