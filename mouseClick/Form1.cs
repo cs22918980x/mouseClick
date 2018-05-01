@@ -30,7 +30,7 @@ namespace mouseClick
             timeLabel.Text = "You have clicked " + time + " time";
             
         }
-
+        
         private void button3_Click(object sender, EventArgs e)
         {
             if (time > 10) 
@@ -40,6 +40,18 @@ namespace mouseClick
             else 
                 MessageBox.Show("too slow");
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string text="";
+            int i=1;
+            while (i <= 9)
+            {
+                text += time + " * " + i + "=" + i*time +"\r\n";
+                i++;
+            }
+            MessageBox.Show(text);
         }
     }
 }
