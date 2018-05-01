@@ -53,5 +53,34 @@ namespace mouseClick
             }
             MessageBox.Show(text);
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string text = "";
+            for (int a = 1;a <=9; a++  )
+            {
+                for(int b = 1;b <=9; b++)
+                {
+                    text += a + " * " + b + "=" + a * b + "\r\n";
+                }
+            }
+            MessageBox.Show(text);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sequenceButton_Click(object sender, EventArgs e)
+        {
+            string text = "";
+            int b = (int)sequence1.Value;
+            for (int i =1;i <=9;i++)
+            {
+                text += i + " * " + b + " = " + i * b + "\r\n";
+            }
+            MessageBox.Show(text);
+        }  
     }
 }

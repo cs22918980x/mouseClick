@@ -33,6 +33,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.sequence1 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.sequenceButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.sequence1)).BeginInit();
             this.SuspendLayout();
             // 
             // timeLabel
@@ -90,11 +95,61 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("微軟正黑體", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button5.Location = new System.Drawing.Point(281, 330);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(149, 101);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "9*9";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // sequence1
+            // 
+            this.sequence1.Font = new System.Drawing.Font("新細明體", 12F);
+            this.sequence1.Location = new System.Drawing.Point(549, 328);
+            this.sequence1.Name = "sequence1";
+            this.sequence1.Size = new System.Drawing.Size(71, 31);
+            this.sequence1.TabIndex = 6;
+            this.sequence1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("新細明體", 12F);
+            this.label1.Location = new System.Drawing.Point(467, 328);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 20);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "sequence";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // sequenceButton
+            // 
+            this.sequenceButton.Font = new System.Drawing.Font("新細明體", 13F);
+            this.sequenceButton.Location = new System.Drawing.Point(471, 372);
+            this.sequenceButton.Name = "sequenceButton";
+            this.sequenceButton.Size = new System.Drawing.Size(149, 59);
+            this.sequenceButton.TabIndex = 8;
+            this.sequenceButton.Text = "check sequence";
+            this.sequenceButton.UseVisualStyleBackColor = true;
+            this.sequenceButton.Click += new System.EventHandler(this.sequenceButton_Click);
+            // 
             // mouseClick
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(709, 505);
+            this.Controls.Add(this.sequenceButton);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.sequence1);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -103,6 +158,7 @@
             this.Font = new System.Drawing.Font("新細明體", 9F);
             this.Name = "mouseClick";
             this.Text = "mouseClick";
+            ((System.ComponentModel.ISupportInitialize)(this.sequence1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,6 +171,10 @@
         protected System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.NumericUpDown sequence1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button sequenceButton;
     }
 }
 
